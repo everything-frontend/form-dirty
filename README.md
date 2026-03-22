@@ -19,7 +19,7 @@
 
 Full form libraries like react-hook-form handle it internally, but you have to buy into the entire system. There's no tiny, standalone "is this form dirty?" utility.
 
-**form-dirty is that utility.** ~0.9kB gzipped. Zero dependencies. Works with DOM forms and controlled state (React, Vue, Svelte, anything).
+**form-dirty is that utility.** ~1.0kB gzipped. Zero dependencies. Works with DOM forms and controlled state (React, Vue, Svelte, anything).
 
 ---
 
@@ -87,7 +87,7 @@ console.log(fd.changedFields);  // [{ name: 'name', original: '', current: 'Ada'
 - **`onDirtyChange` callback** — fires only when dirty state transitions
 - **Handles edge cases** — checkboxes, radio buttons, multi-selects, nested objects
 - **SSR safe** — guards all DOM access behind `typeof window`
-- **~0.9kB minified + gzipped**
+- **~1.0kB minified + gzipped**
 
 ---
 
