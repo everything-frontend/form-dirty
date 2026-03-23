@@ -38,6 +38,8 @@ function readFormValues(form: HTMLFormElement): FieldMap {
       } else if (el.type === "radio") {
         if (el.checked) values[name] = el.value;
         else if (!(name in values)) values[name] = "";
+      } else if (el.type === "number") {
+        values[name] = el.value === "" ? "" : el.valueAsNumber;
       } else if (el.type === "file") {
         continue;
       } else {
