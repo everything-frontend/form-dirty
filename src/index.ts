@@ -1,3 +1,5 @@
+/// <reference lib="esnext.disposable" />
+
 export interface FormDirtyOptions {
   form?: HTMLFormElement | string;
   fields?: Record<string, unknown>;
@@ -184,6 +186,10 @@ export class FormDirty {
     this.formEl = null;
     this.baseline = {};
     this.current = {};
+  }
+
+  [Symbol.dispose](): void {
+    this.destroy();
   }
 
   private handleInput(): void {

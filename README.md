@@ -117,6 +117,7 @@ console.log(fd.changedFields);  // [{ name: 'name', original: '', current: 'Ada'
 | `.update(fields)` | `void` | Push new field values (controlled mode) |
 | `.guard(enable?)` | `void` | Toggle the `beforeunload` guard on/off |
 | `.destroy()` | `void` | Remove all listeners and clean up |
+| `[Symbol.dispose]()` | `void` | Alias for `destroy()` — enables `using` syntax |
 
 ### `ChangedField`
 

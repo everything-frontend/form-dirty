@@ -1,6 +1,6 @@
 {
   "name": "form-dirty",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Unsaved changes detection. Snapshot form state, expose isDirty + changedFields, handle beforeunload. Framework agnostic. Zero dependencies.",
   "type": "module",
   "main": "./dist/index.cjs",
